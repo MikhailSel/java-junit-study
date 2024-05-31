@@ -129,7 +129,7 @@ public class UserTest {
         //GIVEN
         User user = new User (1, "Катя", 32, "man","Берлин, ул. Воровского");
         //WHEN
-        boolean result = user.isAgeHonest();
+        boolean result = user.isAgeEven();
         //THEN
         Assertions.assertTrue(result);
     }
@@ -139,7 +139,7 @@ public class UserTest {
         //GIVEN
         User user = new User (1, "Катя", 31, "man","Берлин, ул. Воровского");
         //WHEN
-        boolean result = user.isAgeHonest();
+        boolean result = user.isAgeEven();
         //THEN
         Assertions.assertFalse(result);
     }
