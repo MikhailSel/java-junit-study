@@ -8,15 +8,17 @@ public class Game {
 
     private int tryCount;
 
+    private int randomNum;
+
     public Game(int randomNumLength, int tryCount) {
-        this.randomNumLength = new Random().nextInt(randomNumLength);
+        this.randomNumLength = randomNumLength;
         this.tryCount = tryCount;
+        this.randomNum = new Random().nextInt(randomNumLength);
     }
 
     public void run() {
         String userDesire;
         do {
-            int randomNum = new Random().nextInt(this.randomNumLength);
             System.out.println(randomNum);
             game(randomNum);
             Scanner scanner = new Scanner(System.in);
