@@ -14,7 +14,7 @@ public class ElementIndexFinder {
     }
 
     public static int findElementIndex(int[] array, int target) {
-        for (int i = 0; i <= array.length - 1; i++) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == target) {
                 return i;
             }
@@ -22,3 +22,6 @@ public class ElementIndexFinder {
         return -1;
     }
 }
+
+// что если не найду, что если найду
+// мэйн не тестируем

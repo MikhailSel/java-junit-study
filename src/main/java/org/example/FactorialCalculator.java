@@ -3,11 +3,11 @@ package org.example;
 
 public class FactorialCalculator {
     public static void main(String[] args) {
-        double number = 100;
+        int number = 3;
         System.out.println("Factorial of " + number + " is: " + factorial(number));
     }
 
-    public static double factorial(double n) {
+    public static int factorial(int n) {
         if (n == 0) {
             return 1;
         } else {
